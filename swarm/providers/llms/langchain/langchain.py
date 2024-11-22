@@ -18,7 +18,7 @@ class LangchainLLM(LLMProvider):
 
     def __init__(self, config: LLMConfig, template_dir: Optional[str] = None) -> None:
         super().__init__(config)
-        self.api_key = "Dummy Key"
+        self.api_key = "Dummy key"
         template_dir = template_dir or "prompts"
         self.jinja_env = jinja2.Environment(loader=jinja2.FileSystemLoader(template_dir))
         logger.info("LangchainLLM initialized with template directory at '%s'.", template_dir)
