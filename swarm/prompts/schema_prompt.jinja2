@@ -1,0 +1,12 @@
+Given the information about columns in a knowledge table, generate a schema that includes relationships between the columns if relevant.
+
+**Documents**: {{ documents }}
+**Columns**: {{ columns }}
+**Available Column Names**: {{ entity_types }}
+
+**Instructions**:
+- Use **only** the exact column names provided in `entity_types`.
+- For each relationship, create an object with `"head"`, `"relation"`, and `"tail"` fields.
+- If you cannot generate any meaningful relationships, respond exactly with "None".
+
+**Schema Relationships**:

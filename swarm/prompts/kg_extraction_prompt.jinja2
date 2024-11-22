@@ -1,0 +1,44 @@
+You are an expert assistant focused on extracting key information from the provided text, including entities, rules, relationships, and relationship properties. Use only the text given below and follow the instructions carefully to extract relevant details.
+
+---
+
+**Context**:
+{{ input_text }}
+
+---
+
+**Instructions**:
+
+1. **Identify Entities**:
+   - Extract all relevant entities, such as products, applications, compliance categories, and any other significant terms.
+   - List each identified entity along with its type (e.g., Product, Application, Compliance Category).
+
+2. **Identify Rules**:
+   - Extract any rules or conditions associated with the entities, including compliance requirements, security criteria, or specific attributes.
+   - For each rule, specify the entity it applies to and summarize the rule as clearly as possible.
+
+3. **Identify Relationships**:
+   - Identify relationships between entities based on extracted rules or implied connections.
+   - For each relationship, provide the following structure:
+     - **Subject**: The primary entity (e.g., "Application A").
+     - **Predicate**: The type of relationship (e.g., "is non-compliant with", "requires", "is a category of").
+     - **Object**: The secondary entity or attribute (e.g., "Compliance Category").
+     - **Properties**: Any additional details relevant to the relationship (e.g., "contractual obligation", "frequency", "accountability").
+
+**Output Format** (Use **only** the following structure, with empty lists `[]` if there are no results):
+
+- **Entities**: [{"name": "EntityName", "type": "EntityType"}, ...]
+- **Rules**: [{"entity": "EntityName", "rule": "RuleDescription"}, ...]
+- **Relationships**: [{"subject": "EntityName", "predicate": "RelationshipType", "object": "RelatedEntity", "properties": {"key": "value", ...}}, ...]
+
+**Example Output**:
+- **Entities**: [{"name": "Application A", "type": "Application"}, {"name": "Compliance Category", "type": "Category"}]
+- **Rules**: [{"entity": "Application A", "rule": "must adhere to Compliance Category"}]
+- **Relationships**: [{"subject": "Application A", "predicate": "is non-compliant with", "object": "Compliance Category", "properties": {"contractual obligation": "yes", "frequency": "quarterly"}}]
+
+---
+
+**Output**:
+- **Entities**:
+- **Rules**:
+- **Relationships**:
